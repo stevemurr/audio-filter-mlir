@@ -19,26 +19,12 @@ make install
 audio-util --input audio.wav --filter hpf --freq 100 --output audio-clean.wav
 ```
 
-## Project Status
-
-- ✅ **Phase 1:** Audio I/O Foundation (Complete)
-- ✅ **Phase 2:** High-Pass Filter Implementation (Complete)
-- ⏳ **Phase 3:** MLIR Integration (Pending)
-- ⏳ **Phase 4:** MLIR Optimization (Pending)
-
 ## Features
 
 - **WAV File I/O:** Read/write 8/16/24/32-bit PCM audio files
 - **High-Pass Filter:** Butterworth 2nd-order filter for removing low frequencies
 - **Command-Line Tool:** `audio-util` for batch processing
 - **Comprehensive Tests:** 100% test pass rate with 12 test cases
-
-## Documentation
-
-- [Project Plan](docs/PLAN.md) - Full development roadmap
-- [Audio Utility](docs/AUDIO_UTIL.md) - Command-line tool documentation
-- [Phase 1 Complete](docs/PHASE1_1_COMPLETE.md) - Audio I/O implementation
-- [Phase 2 Complete](docs/PHASE2_COMPLETE.md) - Filter implementation
 
 ## Make Targets
 
@@ -144,20 +130,6 @@ See LICENSE file.
 ## Contributing
 
 This is a personal learning project focused on MLIR optimization. The current implementation serves as a baseline for MLIR performance comparisons.
-
-## Roadmap
-
-### Phase 3: MLIR Integration (Next)
-- Set up MLIR build infrastructure
-- Link MLIR libraries
-- Create basic MLIR context
-- Verify compilation
-
-### Phase 4: MLIR Optimization (Future)
-- MLIR IR generation for biquad operations
-- Vectorization of sample processing
-- Optimization pass pipeline
-- Performance benchmarks (target: 2-5× speedup)
 
 ## See Also
 
