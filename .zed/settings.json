@@ -1,0 +1,22 @@
+{
+  "lsp": {
+    "clangd": {
+      "binary": {
+        "path": "clangd",
+        "arguments": [
+          "--header-insertion=never",
+          "--compile-commands-dir=.",
+          "--query-driver=/usr/bin/cc",
+          "--background-index",
+          "--clang-tidy"
+        ]
+      }
+    }
+  },
+  "languages": {
+    "C": {
+      "format_on_save": "language_server",
+      "tab_size": 4
+    }
+  }
+}

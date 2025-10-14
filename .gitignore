@@ -1,0 +1,31 @@
+# Build directory (ephemeral)
+build/
+
+# Symlink to build artifacts
+/compile_commands.json
+
+# Common C artifacts
+*.o
+*.a
+*.so
+*.dylib
+*.out
+
+# Test artifacts
+tests/test_data/
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+
+# Debug files
+*.dSYM/
+
+.cache
+docs
