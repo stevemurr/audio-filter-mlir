@@ -19,6 +19,14 @@ make install
 audio-util --input audio.wav --filter hpf --freq 100 --output audio-clean.wav
 ```
 
+## Future Optimizations to Try
+
+- [ ] **`-march=native` equivalent** - Explicitly enable AVX-512/FMA
+- [ ] **Polyhedral optimizations** - Better loop tiling for cache
+- [ ] **Vectorization hints** - Force SIMD on the loop
+- [ ] **Inlining** - Inline the biquad equation directly into the loop body
+- [ ] **Fast-math flags** - Relaxed FP semantics for speed
+
 ## Features
 
 - **WAV File I/O:** Read/write 8/16/24/32-bit PCM audio files
